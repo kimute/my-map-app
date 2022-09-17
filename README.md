@@ -10,6 +10,16 @@ Makig resposive Wep-App follwoing Guideline
 - sort the list by time or alphabetically
 - show only the data based on selected types
 
+## Feature of APP.
+
+PC
+
+<img width="200" alt="full-screen-ver" src="https://user-images.githubusercontent.com/51284158/190865002-f31e5e79-328d-4334-a3cc-16b9ee9e5442.png">
+
+Mobile
+
+<img width="140" alt="mobile-ver" src="https://user-images.githubusercontent.com/51284158/190864981-e2f4a2ef-7bd0-4388-aa5c-3cf29d41b036.png">
+
 ## Stack
 
 <div style="display:flex">
@@ -95,3 +105,19 @@ Test:
   Time:        2.132 s
   Ran all test suites.
   ```
+
+## How it works.
+
+Map shows the whole place where I've been
+
+Click the country & you can see details of my history in that country.
+
+<img width="400" alt="guide-1" src="https://user-images.githubusercontent.com/51284158/190865663-e7f38c3c-b5d5-44da-885a-c3d2d7881155.png">
+
+Prev/ Next Button visible in only in mobile screen.
+
+you can click Marker in detail page. you can see Info of that Place.
+
+<img width="200" alt="guide-2" src="https://user-images.githubusercontent.com/51284158/190865670-7836fecd-9244-4c29-8fae-11ed51b84b07.png">
+
+<img width="400" alt="guide-3" src="https://user-images.githubusercontent.com/51284158/190865675-39e82eb4-9d1c-4ac2-82c9-9f288d75e7fb.png">
