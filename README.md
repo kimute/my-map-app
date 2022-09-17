@@ -1,34 +1,97 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Frontend Task
 
-## Getting Started
+Makig resposive Wep-App follwoing Guideline
 
-First, run the development server:
+- Add MapBox
+- create a new project with Typescript
+  - make Typescript interfaces
+- create a JavaScript object for any data for i wish
+- add previous/next buttons to step through the destinations
+- sort the list by time or alphabetically
+- show only the data based on selected types
 
-```bash
-npm run dev
-# or
-yarn dev
+## Stack
+
+<div style="display:flex">
+<img alt="Nextjs" src ="https://img.shields.io/badge/NextJS-v12.3.0-000000.svg?&style=for-the-badge&logo=Nextjs&logoColor=000000"/>
+<img alt="TypeScript" src ="https://img.shields.io/badge/TypeScript-v4.8.3-3178C6.svg?&style=for-the-badge&logo=TypeScript&logoColor=3178C6"/>
+<img alt="Tailwind CSS" src ="https://img.shields.io/badge/TailWindCSS-v3.1.8-06B6D4.svg?&style=for-the-badge&logo=TailwindCSS&logoColor=06B6D4"/>
+<img alt="jest" src ="https://img.shields.io/badge/Jest-v28.1.2-C21325.svg?&style=for-the-badge&logo=Jest&logoColor=C21325"/></div>
+react-map-gl(for using MapBox)
+
+## Getting started
+
+```sh
+cd my-map-app && npm i
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Running tests
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```sh
+cd my-map-app && npm run test
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## What I did
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Page:
 
-## Learn More
+\*all pages work resposive
 
-To learn more about Next.js, take a look at the following resources:
+- Index page
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+  - show all of My trace in word map
+  - click Items (country)
+    - show the details of my trace in selected country
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- detail page:
+  - prev , next button are activated in Mobil screen
+    - show details of the places where I lived, traveled and studied
+  - click Marker
+    - show the Image of selected place
 
-## Deploy on Vercel
+Components:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- fetch API
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+  - fetch Mock API(JSON file: public/myList.json)
+  - components/api/
+    - requestAPI.js , fetchData.js
+
+- MapBox.tsx
+
+  - rendering map & fetched data
+  - reusable
+
+- MapBox.tsx
+
+  - reusable
+
+- uitls
+
+  - sort, filtering functions
+  - reusable
+
+Hooks:
+
+- useEffect
+- useState
+- useRecoilState, useSetRecoilState (for Recoil)
+
+Test:
+
+- Jest
+
+  ```sh
+  PASS  test/component.test.tsx
+  <Button/>
+    ✓ it should be rendering with props (22 ms)
+    ✓ it should be deactivated (4 ms)
+  <MapBox/>
+    ✓ it shoudld be renders without crashing (152 ms)
+
+  Test Suites: 1 passed, 1 total
+  Tests:       3 passed, 3 total
+  Snapshots:   0 total
+  Time:        2.132 s
+  Ran all test suites.
+  ```
