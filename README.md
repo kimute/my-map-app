@@ -1,11 +1,11 @@
 # Frontend Task
 
-Makig resposive Wep-App follwoing Guideline
+Making responsive Wep-App follwoing Guideline
 
 - Add MapBox
 - create a new project with Typescript
   - make Typescript interfaces
-- create a JavaScript object for any data for i wish
+- create a JavaScript object data (any Data about me)
 - add previous/next buttons to step through the destinations
 - sort the list by time or alphabetically
 - show only the data based on selected types
@@ -45,7 +45,7 @@ cd my-map-app && npm run test
 
 Page:
 
-\*all pages work resposive
+\*all pages work responsive
 
 - Index page
 
@@ -53,7 +53,7 @@ Page:
   - click Items (country)
     - show the details of my trace in selected country
 
-- detail page:
+- Detail page:
   - prev , next button are activated in Mobil screen
     - show details of the places where I lived, traveled and studied
   - click Marker
