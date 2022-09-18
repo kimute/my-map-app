@@ -73,7 +73,7 @@
   },
   {
     "id": 10,
-    "title": "current residence",
+    "title": "Current residence, Tokyo",
     "category": "Japan",
     "imgSrc": "https://images.unsplash.com/photo-1513407030348-c983a97b98d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8dG9reW98ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
     "location": [35.774143, 139.681209],
@@ -89,7 +89,7 @@
   },
   {
     "id": 12,
-    "title": "kyoto",
+    "title": "Kyoto",
     "category": "Japan",
     "imgSrc": "https://images.unsplash.com/photo-1578469645742-46cae010e5d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8a3lvdG98ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60",
     "location": [35.021041, 135.7556075],
