@@ -48,7 +48,7 @@ const Home: NextPage = () => {
                 key={idx}
                 className="relative cursor-pointer hover:z-50 hover:scale-y-105 hover:transition duration 300"
               >
-                <h3 className="mt-2 mx-2 text-xl text-bold text-amber-900 absolute z-40 ">
+                <h3 className="mt-2 mx-2 text-xl text-bold text-white absolute z-40 ">
                   {data.category} | {data.title}
                 </h3>
                 <Image

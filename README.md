@@ -14,11 +14,11 @@ Makig resposive Wep-App follwoing Guideline
 
 PC
 
-<img width="200" alt="full-screen-ver" src="https://user-images.githubusercontent.com/51284158/190865002-f31e5e79-328d-4334-a3cc-16b9ee9e5442.png">
+<img width="200" alt="pc-ver" src="https://user-images.githubusercontent.com/51284158/190891111-02b6e94b-f93c-428b-8b39-bb850f74d8c5.png">
 
 Mobile
 
-<img width="140" alt="mobile-ver" src="https://user-images.githubusercontent.com/51284158/190864981-e2f4a2ef-7bd0-4388-aa5c-3cf29d41b036.png">
+<img width="141" alt="m-ver" src="https://user-images.githubusercontent.com/51284158/190891181-20b961e5-d6ce-4fff-8e5c-b20975b53270.png">
 
 ## Stack
 
@@ -112,12 +112,14 @@ Map shows the whole place where I've been
 
 Click the country & you can see details of my history in that country.
 
-<img width="400" alt="guide-1" src="https://user-images.githubusercontent.com/51284158/190865663-e7f38c3c-b5d5-44da-885a-c3d2d7881155.png">
+<img width="400" alt="guide-1" src="https://user-images.githubusercontent.com/51284158/190891318-98b08d23-787d-4989-a5a0-9d366004a08b.png">
 
 Prev/ Next Button visible in only in mobile screen.
 
-you can click Marker in detail page. you can see Info of that Place.
+you can click Marker to see the specific Info. of the Place in detail page.
 
-<img width="200" alt="guide-2" src="https://user-images.githubusercontent.com/51284158/190865670-7836fecd-9244-4c29-8fae-11ed51b84b07.png">
+<img width="200" alt="guide-4" src="https://user-images.githubusercontent.com/51284158/190891215-49ae94aa-56d0-4cd9-a14d-272c60898df9.png">
 
-<img width="400" alt="guide-3" src="https://user-images.githubusercontent.com/51284158/190865675-39e82eb4-9d1c-4ac2-82c9-9f288d75e7fb.png">
+<img width="400" alt="guide-2" src="https://user-images.githubusercontent.com/51284158/190891209-e9e81430-dd48-4ade-a8a1-5f275afa3cee.png">
+
+<img width="400" alt="guide-3" src="https://user-images.githubusercontent.com/51284158/190891214-f87835e2-1664-4ee4-a32f-fd0531ee9795.png">

@@ -9,16 +9,15 @@ import { Button } from "./Button";
 type DataProps = {
   result: IMylocationData[];
 };
+
 const Mapbox: React.FC<DataProps> = ({ result }) => {
   const MAP_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
-
   const [popupInfo, setPopupInfo] = useState<IMylocationData | null>(null);
-  const [lat, setLat] = useState(0);
-  const [lng, setLng] = useState(0);
-  const [track, setTrack] = useState(0);
+  const [lat, setLat] = useState(result[0]?.location[0]);
+  const [lng, setLng] = useState(result[0]?.location[1]);
+  const [track, setTrack] = useState(1);
 
   const handleClick = (data: any) => {
-    console.log(data);
     setLng(data.location[1]);
     setLat(data.location[0]);
   };
@@ -28,15 +27,15 @@ const Mapbox: React.FC<DataProps> = ({ result }) => {
   };
 
   const handlePrev = () => {
-    setTrack(track - 1);
-    setLat(result ? result[track - 1]?.location[0] : 0);
-    setLng(result ? result[track - 1]?.location[1] : 0);
+    setTrack((prev) => prev - 1);
+    setLat(result[track - 1]?.location[0]);
+    setLng(result[track - 1]?.location[1]);
   };
 
   const handleNext = () => {
-    setTrack(track + 1);
-    setLat(result ? result[track]?.location[0] : 0);
-    setLng(result ? result[track]?.location[1] : 0);
+    setLat(result[track]?.location[0]);
+    setLng(result[track]?.location[1]);
+    setTrack((prev) => prev + 1);
   };
 
   return (
@@ -53,7 +52,7 @@ const Mapbox: React.FC<DataProps> = ({ result }) => {
         </Link>
         |
         <span className="text-amber-500 mx-2 font-bold">
-          {result ? result[0]?.category : ""}
+          {result[0]?.category}
         </span>
       </h1>
       <section className="md:w-full md:h-80 w-100 h-80 relative z-1">
@@ -83,6 +82,18 @@ const Mapbox: React.FC<DataProps> = ({ result }) => {
                     height="30px"
                     alt="mark"
                   />
+                  <div className="w-40 rounded-sm bg-transparent ml-10 top-0 items-center absolute">
+                    <span className="text-bold text-sm text-white">
+                      {data?.title} | {data.category}
+                    </span>
+                    <Image
+                      className="z-0 rounded-xl"
+                      src={data.imgSrc}
+                      width="400px"
+                      height="300px"
+                      alt="country"
+                    />
+                  </div>
                 </Marker>
               </>
             ))}
@@ -98,13 +109,7 @@ const Mapbox: React.FC<DataProps> = ({ result }) => {
                 <span className="mb-2 ">
                   {popupInfo.title} | {popupInfo.category}
                 </span>
-                <Image
-                  className="mt-2"
-                  src={popupInfo.imgSrc}
-                  width="100%"
-                  height="100%"
-                  alt="mark"
-                />
+                <div>{popupInfo.details}</div>
               </div>
             </Popup>
           )}
@@ -116,7 +121,7 @@ const Mapbox: React.FC<DataProps> = ({ result }) => {
           <div onClick={handlePrev}>
             <Button
               size="sm"
-              disabled={track === 1 ? true : false}
+              disabled={track < 1 ? true : false}
               actionText="< prev"
             />
           </div>
