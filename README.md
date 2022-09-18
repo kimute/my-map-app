@@ -114,7 +114,7 @@ Click the country & you can see details of my history in that country.
 
 <img width="400" alt="guide-1" src="https://user-images.githubusercontent.com/51284158/190891318-98b08d23-787d-4989-a5a0-9d366004a08b.png">
 
-Prev/ Next Button visible in only in mobile screen.
+Prev/ Next Button are visible in mobile screen.
 
 you can click Marker to see the specific Info. of the Place in detail page.
 
