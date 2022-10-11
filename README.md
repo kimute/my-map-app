@@ -1,4 +1,7 @@
-# Frontend Task
+# Frontend side project
+
+Abuot this App..
+This App. shows my Trace sequentially where I lived and where I went.
 
 Making responsive Wep-App follwoing Guideline
 
